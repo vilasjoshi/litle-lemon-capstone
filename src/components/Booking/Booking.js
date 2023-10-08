@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./Booking.css"
 export default function Booking() {
-    const [bookingDate, setBookingDate] =  useState()
+    const [bookingDate, setBookingDate] =  useState();
+    const [time, setTime] =  useState();
+    const [guestCount, setGuestCount] =  useState(0);
+    const [occasion, setOcccasion] =  useState("");
   return (
     <div>
       <form className="formStyle">

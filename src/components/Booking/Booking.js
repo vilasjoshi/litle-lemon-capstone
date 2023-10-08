@@ -20,9 +20,9 @@ export default function Booking() {
           <option>22:00</option>
         </select>
         <label for="guests">Number of guests</label>
-        <input type="number" placeholder="1" min="1" max="10" id="guests" />
+        <input type="number" placeholder="1" min="1" max="10" id="guests" onChange={(e) =>setGuestCount(e.target.value)}/>
         <label for="occasion">Occasion</label>
-        <select id="occasion">
+        <select id="occasion" value={occasion}>
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
